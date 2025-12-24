@@ -38,10 +38,7 @@ async function bootstrap() {
     transform: true,
     forbidNonWhitelisted: true,
   }));
-  
 
-  // Global API prefix
-  app.setGlobalPrefix('api');
 
   await app.listen(process.env.PORT ?? 3001);
   console.log(`Backend running on http://localhost:${process.env.PORT ?? 3001}`);
